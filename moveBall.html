@@ -1,0 +1,49 @@
+<div id="ball" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:yellow"></div>
+
+<script>
+
+var velocityX = 7;
+var velocityY = 10;
+var positionX = 0;
+var positionY = 0;
+var ball = document.getElementById('ball');
+var leftEdge = 0;
+var rightEdge = 600;
+var topEdge = 0;
+var bottomEdge = 600;
+var ballColor = "yellow";
+
+function moveBall(){
+if ((positionX + velocityX > rightEdge) || (positionX + velocityX < leftEdge)){
+  velocityX = 0 - velocityX;
+  ballColor = "yellow";
+  ball.style.width = "100px";
+  ball.style.height = "100px";
+  velocityX = velocityX * 1.25;
+}
+if ((positionY + velocityY > bottomEdge) || (positionY + velocityY < topEdge)){
+  velocityY = 0 - velocityY;
+  ballColor = "orange";
+  ball.style.width = "50px";
+  ball.style.height = "50px";
+  velocityY = velocityY * 1.25;
+}
+
+positionX = positionX + velocityX;
+ball.style.left = positionX + 'px';
+
+positionY = positionY + velocityY;
+ball.style.top = positionY + 'px';
+ball.style.background = ballColor;
+}
+setInterval(moveBall, 100);
+
+</script>
