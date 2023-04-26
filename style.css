@@ -1,0 +1,41 @@
+.grid{
+    display:grid;
+    grid-template-columns: 400px 1fr 400px;
+    grid-template-rows: auto 1fr auto;
+    gap: 40px;
+    height: 90vh;
+}
+.bio-grid{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+}
+header, footer {
+    grid-column: 1 / 4;
+    background: rgb(245, 243, 243);
+}f
+h1{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+h3{
+    font-family: 'Jost', sans-serif;
+}
+h4{
+    font-family: 'Jost', sans-serif;
+}
+p{
+    font-family: 'Jost', sans-serif;
+}
+i{
+    display: inline-block;
+    text-align: right;
+    justify-content: right;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    text-align:center;
+}
