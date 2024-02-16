@@ -1,6 +1,9 @@
 # Projects
 I have created the following projects in a full-stack developer course.
 
+## Food ordering application
+I used React, NextJS, a Strapi database, the Stripe payment API, and Bootstrap styling to create a food ordering app.
+
 ## Front End Banking Application
 I used React, hash routing, and Bootstrap to create this "Bad Bank" stand-alone app.  The app allows users to create an account, deposit an amount, withdraw an amount, and see all user accounts and balances (which is what makes it a BAD bank).  I published the app in AWS.
 <br>
